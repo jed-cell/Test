@@ -2,3 +2,6 @@ language: ruby
 rvm:
  - 2.2
  - jruby
+before_install:
+- echo -e "machine github.com\n  login $GITHUB_TOKEN" > ~/.netrc
+- git lfs pull
